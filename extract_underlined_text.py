@@ -14,7 +14,6 @@ def extract_highlighted_text(image_path):
 
     for contour in contours:
         x, y, w, h = cv2.boundingRect(contour)
-        # Crop to the exact bounding box of the contour
         if w > 50 and h > 20:  # Adjust size thresholds as needed
             cropped_img = img[y:y+h, x:x+w]
             cropped_gray = cv2.cvtColor(cropped_img, cv2.COLOR_BGR2GRAY)
@@ -31,4 +30,14 @@ def extract_highlighted_text(image_path):
 
 # Define the image path and call the function
 image_path = './img.jpg'
-extract_highlighted_text(image_path)
+highlighted_text = extract_highlighted_text(image_path)
+
+# Write the combined text to a text file
+with open('result.txt', 'w') as file:
+    file.write(highlighted_text)
+
+print("Highlighted text:")
+print("***")
+print(highlighted_text)
+print("***")
+print("The highlighted text has been successfully written to 'result.txt'.")
