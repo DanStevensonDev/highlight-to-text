@@ -4,7 +4,7 @@
 
 This repo is for a mini personal project as a way for me to learn more about computer vision and Python. 
 
-It uses OpenCV to extract highlighted text from book page images. 
+It uses [OpenCV](https://opencv.org/) to extract highlighted text from book page images. 
 
 ## Installation
 
