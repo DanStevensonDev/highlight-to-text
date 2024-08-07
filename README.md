@@ -17,6 +17,8 @@ pip install opencv-python
 conda install opencv 
 ```
 
-Following this, run `python3 extract_underlined_text.py img.jpg` to try out the highlight extraction. 
+Following this, run `python3 extract_underlined_text.py img.jpg` to try out the highlight extraction.
 
-There's a test image already added (`img.jpg`) which you can replace. Currently the project looks for images highlighted in orange highlight marker. 
+There's a test image already added (`img.jpg`) which you can replace. Currently the project looks for images highlighted in orange highlight marker.
+
+You can also see a test output file (created by running the extraction command) at `result.txt`. 
